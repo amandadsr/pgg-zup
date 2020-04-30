@@ -1,0 +1,26 @@
+<div>
+
+  <nav class="navbar navbar-dark bg-dark fixed-top" [hidden]="esconderBarra()">
+    
+    <a class="navbar-brand" >
+      <!--<img src="https://cdn.searchenginejournal.com/wp-content/uploads/2017/06/shutterstock_268688447-760x400.jpg" -->
+      <<img src="assets/searchjob.jpeg"
+        width="80" height="30" class="rounded" alt="">
+    </a>
+
+    <div class="btn-group" role="group" aria-label="Basic example">
+
+      <button type="button" class="btn btn-success" [routerLink]="['/feed']"
+        routerLinkActive="router-link-active">Feed</button>
+      <button type="button" class="btn btn-success" [routerLink]="['/perfil']"
+        routerLinkActive="router-link-active">Perfil</button>
+      
+    </div>
+
+    <button class="btn btn-sm btn-outline-success" type="button" (click)="sair()"> Sair </button>
+  </nav>
+
+
+</div>
+
+<router-outlet></router-outlet>
